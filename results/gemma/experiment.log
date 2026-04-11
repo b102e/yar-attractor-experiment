@@ -1,0 +1,86 @@
+2026-04-11 16:00:55,477 INFO Seed set: 42
+2026-04-11 16:00:55,478 INFO Experiment: yar_attractor_v1
+2026-04-11 16:00:55,478 INFO Model: google/gemma-2-9b-it
+2026-04-11 16:00:55,478 INFO Layers: [8, 16, 24]
+2026-04-11 16:00:55,478 INFO Loading data...
+2026-04-11 16:00:55,479 INFO Condition A loaded: 609 words
+2026-04-11 16:00:55,484 INFO Condition B loaded: 7 paraphrases
+2026-04-11 16:00:55,487 INFO Condition C loaded: 7 control prompts
+2026-04-11 16:00:55,489 INFO Condition D loaded: 88 words
+2026-04-11 16:00:55,489 INFO Data verification passed.
+2026-04-11 16:00:55,489 INFO Dry run complete. Data OK.
+2026-04-11 16:00:58,278 INFO Seed set: 42
+2026-04-11 16:00:58,278 INFO Experiment: yar_attractor_v1
+2026-04-11 16:00:58,278 INFO Model: google/gemma-2-9b-it
+2026-04-11 16:00:58,278 INFO Layers: [8, 16, 24]
+2026-04-11 16:00:58,279 INFO Loading data...
+2026-04-11 16:00:58,280 INFO Condition A loaded: 609 words
+2026-04-11 16:00:58,284 INFO Condition B loaded: 7 paraphrases
+2026-04-11 16:00:58,289 INFO Condition C loaded: 7 control prompts
+2026-04-11 16:00:58,290 INFO Condition D loaded: 88 words
+2026-04-11 16:00:58,290 INFO Data verification passed.
+2026-04-11 16:00:58,290 INFO Loading model...
+2026-04-11 16:00:58,290 INFO Loading model: google/gemma-2-9b-it
+2026-04-11 16:00:58,384 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-11 16:00:58,454 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-11 16:00:58,503 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-11 16:00:58,550 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-11 16:00:59,165 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it "HTTP/1.1 200 OK"
+2026-04-11 16:00:59,211 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-11 16:00:59,825 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-11 16:00:59,872 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/main/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-04-11 16:00:59,920 INFO HTTP Request: GET https://huggingface.co/google/gemma-2-9b-it/resolve/main/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-04-11 16:00:59,976 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/revision/main "HTTP/1.1 200 OK"
+2026-04-11 16:01:00,026 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/11c9b309abf73637e4b6f9a3fa1e92e615547819/model-00001-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 16:01:00,056 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/11c9b309abf73637e4b6f9a3fa1e92e615547819/model-00003-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 16:01:00,059 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/11c9b309abf73637e4b6f9a3fa1e92e615547819/model-00004-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 16:01:00,063 INFO HTTP Request: HEAD https://huggingface.co/google/gemma-2-9b-it/resolve/11c9b309abf73637e4b6f9a3fa1e92e615547819/model-00002-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 16:01:00,076 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/xet-read-token/11c9b309abf73637e4b6f9a3fa1e92e615547819 "HTTP/1.1 200 OK"
+2026-04-11 16:01:00,111 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/xet-read-token/11c9b309abf73637e4b6f9a3fa1e92e615547819 "HTTP/1.1 200 OK"
+2026-04-11 16:01:00,113 INFO HTTP Request: GET https://huggingface.co/api/models/google/gemma-2-9b-it/xet-read-token/11c9b309abf73637e4b6f9a3fa1e92e615547819 "HTTP/1.1 200 OK"
+2026-04-11 16:02:45,269 INFO Seed set: 42
+2026-04-11 16:02:45,270 INFO Experiment: yar_attractor_v1
+2026-04-11 16:02:45,270 INFO Model: google/gemma-2-9b-it
+2026-04-11 16:02:45,271 INFO Layers: [8, 16, 24]
+2026-04-11 16:02:45,271 INFO Loading data...
+2026-04-11 16:02:45,272 INFO Condition A loaded: 609 words
+2026-04-11 16:02:45,277 INFO Condition B loaded: 7 paraphrases
+2026-04-11 16:02:45,281 INFO Condition C loaded: 7 control prompts
+2026-04-11 16:02:45,282 INFO Condition D loaded: 88 words
+2026-04-11 16:02:45,283 INFO Data verification passed.
+2026-04-11 16:02:45,283 INFO Dry run complete. Data OK.
+2026-04-11 16:02:47,483 INFO Seed set: 42
+2026-04-11 16:02:47,483 INFO Experiment: yar_attractor_v1
+2026-04-11 16:02:47,483 INFO Model: google/gemma-2-9b-it
+2026-04-11 16:02:47,484 INFO Layers: [8, 16, 24]
+2026-04-11 16:02:47,484 INFO Loading data...
+2026-04-11 16:02:47,485 INFO Condition A loaded: 609 words
+2026-04-11 16:02:47,489 INFO Condition B loaded: 7 paraphrases
+2026-04-11 16:02:47,494 INFO Condition C loaded: 7 control prompts
+2026-04-11 16:02:47,494 INFO Condition D loaded: 88 words
+2026-04-11 16:02:47,495 INFO Data verification passed.
+2026-04-11 16:02:47,495 INFO Loading model...
+2026-04-11 16:02:47,495 INFO Loading model: google/gemma-2-9b-it
+2026-04-11 16:02:48,906 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-11 16:02:56,683 INFO Model loaded. Parameters: 9.2B
+2026-04-11 16:02:56,683 INFO Extracting activations: Condition A (1 texts)
+2026-04-11 16:02:56,971 INFO Extracting activations: Condition B (7 texts)
+2026-04-11 16:02:57,974 INFO Extracting activations: Condition C (7 texts)
+2026-04-11 16:02:58,954 INFO Extracting activations: Condition D (1 texts)
+2026-04-11 16:02:58,997 INFO Activations saved to results/activations/
+2026-04-11 16:02:59,052 INFO Computing distances...
+2026-04-11 16:02:59,053 INFO Computing distances at layer 8
+2026-04-11 16:02:59,069 INFO   Layer 8: within=0.0035 between=0.0107 p=0.0000 d=1.938 ✓ SIGNIFICANT
+2026-04-11 16:02:59,069 INFO Computing distances at layer 16
+2026-04-11 16:02:59,084 INFO   Layer 16: within=0.0032 between=0.0082 p=0.0000 d=1.823 ✓ SIGNIFICANT
+2026-04-11 16:02:59,084 INFO Computing distances at layer 24
+2026-04-11 16:02:59,099 INFO   Layer 24: within=0.0027 between=0.0075 p=0.0000 d=1.840 ✓ SIGNIFICANT
+2026-04-11 16:02:59,102 INFO Results saved: results/yar_attractor_v1_20260411_160259.json
+2026-04-11 16:02:59,102 INFO Generating figures...
+2026-04-11 16:02:59,106 INFO Generating figures...
+2026-04-11 16:02:59,818 INFO Saved: figures/fig1_tsne.png
+2026-04-11 16:03:00,003 INFO Saved: figures/fig2_convergence.png
+2026-04-11 16:03:00,311 INFO Saved: figures/fig3_distance_matrix_layer16.png
+2026-04-11 16:03:00,453 INFO Saved: figures/fig4_distilled_trajectory.png
+2026-04-11 16:03:00,453 INFO All figures saved to figures/
+2026-04-11 16:03:00,453 INFO Experiment complete.

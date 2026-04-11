@@ -1,0 +1,52 @@
+2026-04-11 15:18:53,755 INFO Seed set: 42
+2026-04-11 15:18:53,755 INFO Experiment: yar_attractor_v1
+2026-04-11 15:18:53,756 INFO Model: meta-llama/Llama-3.1-8B-Instruct
+2026-04-11 15:18:53,756 INFO Layers: [8, 16, 24]
+2026-04-11 15:18:53,756 INFO Loading data...
+2026-04-11 15:18:53,757 INFO Condition A loaded: 609 words
+2026-04-11 15:18:53,758 INFO Condition B loaded: 7 paraphrases
+2026-04-11 15:18:53,759 INFO Condition C loaded: 7 control prompts
+2026-04-11 15:18:53,759 INFO Condition D loaded: 88 words
+2026-04-11 15:18:53,759 INFO Data verification passed.
+2026-04-11 15:18:53,760 INFO Loading model...
+2026-04-11 15:18:53,760 INFO Loading model: meta-llama/Llama-3.1-8B-Instruct
+2026-04-11 15:18:53,889 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-11 15:18:54,871 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-11 15:18:54,925 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-11 15:18:54,988 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,132 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,215 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,424 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-11 15:18:56,484 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,536 INFO HTTP Request: GET https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,653 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/revision/main "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,711 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00001-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 15:18:56,752 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00002-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 15:18:56,784 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 "HTTP/1.1 200 OK"
+2026-04-11 15:18:56,788 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00004-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 15:18:56,793 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00003-of-00004.safetensors "HTTP/1.1 302 Found"
+2026-04-11 15:18:56,804 INFO HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 "HTTP/1.1 200 OK"
+2026-04-11 15:20:12,545 INFO HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-11 15:20:12,612 INFO HTTP Request: GET https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-04-11 15:20:12,616 INFO Model loaded. Parameters: 8.0B
+2026-04-11 15:20:12,617 INFO Extracting activations: Condition A (1 texts)
+2026-04-11 15:20:13,433 INFO Extracting activations: Condition B (7 texts)
+2026-04-11 15:20:15,345 INFO Extracting activations: Condition C (7 texts)
+2026-04-11 15:20:17,227 INFO Extracting activations: Condition D (1 texts)
+2026-04-11 15:20:17,299 INFO Activations saved to results/activations/
+2026-04-11 15:20:17,309 INFO Computing distances...
+2026-04-11 15:20:17,309 INFO Computing distances at layer 8
+2026-04-11 15:20:17,359 INFO   Layer 8: within=0.0106 between=0.0260 p=0.0000 d=1.912 ✓ SIGNIFICANT
+2026-04-11 15:20:17,359 INFO Computing distances at layer 16
+2026-04-11 15:20:17,406 INFO   Layer 16: within=0.0121 between=0.0329 p=0.0000 d=1.886 ✓ SIGNIFICANT
+2026-04-11 15:20:17,406 INFO Computing distances at layer 24
+2026-04-11 15:20:17,449 INFO   Layer 24: within=0.0070 between=0.0221 p=0.0000 d=1.907 ✓ SIGNIFICANT
+2026-04-11 15:20:17,450 INFO Results saved: results/yar_attractor_v1_20260411_152017.json
+2026-04-11 15:20:17,450 INFO Generating figures...
+2026-04-11 15:20:17,450 INFO Generating figures...
+2026-04-11 15:20:19,690 INFO Saved: figures/fig1_tsne.png
+2026-04-11 15:20:20,136 INFO Saved: figures/fig2_convergence.png
+2026-04-11 15:20:20,807 INFO Saved: figures/fig3_distance_matrix_layer16.png
+2026-04-11 15:20:21,169 INFO Saved: figures/fig4_distilled_trajectory.png
+2026-04-11 15:20:21,169 INFO All figures saved to figures/
+2026-04-11 15:20:21,169 INFO Experiment complete.
