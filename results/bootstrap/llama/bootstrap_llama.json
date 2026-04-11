@@ -1,0 +1,32 @@
+{
+  "8": {
+    "D_distilled": 0.24827688932418823,
+    "D_random_mean": 0.5828022360801697,
+    "D_random_median": 0.5807374715805054,
+    "D_random_std": 0.03415627032518387,
+    "D_random_min": 0.5217004418373108,
+    "D_random_max": 0.6532078385353088,
+    "n_samples": 30,
+    "distilled_beats_random_pct": 100.0
+  },
+  "16": {
+    "D_distilled": 0.13604402542114258,
+    "D_random_mean": 0.523165762424469,
+    "D_random_median": 0.5259783267974854,
+    "D_random_std": 0.05864730104804039,
+    "D_random_min": 0.41183793544769287,
+    "D_random_max": 0.6420223712921143,
+    "n_samples": 30,
+    "distilled_beats_random_pct": 100.0
+  },
+  "24": {
+    "D_distilled": 0.06944292783737183,
+    "D_random_mean": 0.3586765229701996,
+    "D_random_median": 0.34120973944664,
+    "D_random_std": 0.0932355672121048,
+    "D_random_min": 0.27110666036605835,
+    "D_random_max": 0.8160057067871094,
+    "n_samples": 30,
+    "distilled_beats_random_pct": 100.0
+  }
+}
