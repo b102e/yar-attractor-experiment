@@ -1,8 +1,6 @@
 # YAR Attractor Experiment
 
-**Hypothesis:** The cognitive_core of a persistent cognitive agent behaves as a 
-conceptual attractor in LLM activation space — analogous to semantic concept 
-attractors reported by Chytas & Singh (2025).
+**Hypothesis:** Hypothesis: The cognitive_core of a persistent cognitive agent induces attractor-like structure in LLM activation space, analogous to semantic concept clustering reported by Chytas & Singh (2025).
 
 ## Setup
 
