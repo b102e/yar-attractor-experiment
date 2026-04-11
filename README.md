@@ -1,6 +1,17 @@
 # YAR Attractor Experiment
 
-**Hypothesis:** Hypothesis: The cognitive_core of a persistent cognitive agent induces attractor-like structure in LLM activation space, analogous to semantic concept clustering reported by Chytas & Singh (2025).
+This repository contains code and data for the paper:
+
+**"Identity as Attractor: Geometric Evidence for Persistent Agent Architecture in LLM Activation Space"**  
+Vladimir Vasilenko, 2026
+
+---
+
+## Hypothesis
+
+The cognitive_core of a persistent cognitive agent induces attractor-like structure in LLM activation space, analogous to semantic concept clustering reported by Chytas & Singh (2025).
+
+---
 
 ## Setup
 
@@ -10,7 +21,7 @@ pip install -r requirements.txt
 
 ## Data structure
 
-```
+```text
 data/
     condition_A.txt          # original cognitive_core (full document)
     condition_B/
@@ -40,10 +51,10 @@ python run.py --skip-extraction
 
 ## Output
 
-```
+```text
 results/
     yar_attractor_v1_YYYYMMDD_HHMMSS.json   # full results with stats
-    activations/                              # raw .npy files per condition/layer
+    activations/                            # raw .npy files per condition/layer
     experiment.log
 
 figures/
@@ -55,18 +66,36 @@ figures/
 
 ## Interpreting results
 
-Primary claim requires:
-- `p_value < 0.0167` (Bonferroni α) at layer 16 and/or 24
-- `mean_within_AB < mean_between`
-- `cohens_d > 0` (positive effect size)
+Primary result (H1):
+- p_value < 0.0167 (Bonferroni α) at layer 16 and/or 24
+- mean_within_AB < mean_between
+- cohens_d >> 0 (typically > 1.0 in observed results)
 
-Convergence (H2): `mean_within_AB` should decrease from layer 8 → 24.
+Convergence (H2):
+- mean_within_AB decreases from layer 8 → 24 (allowing minor non-monotonicity)
 
-Distilled core (H3, exploratory): `d_to_centroid_AB` at layer 24 should be
-comparable to `mean_within_AB` — indicating the 5-sentence distillation
-reaches the same attractor as the full document.
+Distilled core (H3, exploratory):
+- d_to_centroid_AB decreases across layers
+- but remains substantially larger than mean_within_AB
+- → indicating partial convergence without reaching the full-document region
 
-## Reference
+## Notes
 
-Chytas, S.P. & Singh, V. (2025). Concept Attractors in LLMs and their 
-Applications. arXiv:2601.11575
+- The experiment relies on mean pooling over token positions.
+- Last-token pooling does not reproduce the effect (see paper).
+- Structural markers (JSON blocks, delimiters) have a minor contribution relative to semantic content (see ablation results).
+
+## Reproducibility
+
+All results can be reproduced with a single command (see Run section).
+Full code, data, and experiment configuration are included in this repository.
+
+## References
+
+Chytas, S.P. & Singh, V. (2025).  
+Concept Attractors in LLMs and their Applications.  
+arXiv:2601.11575
+
+Lu, C. et al. (2026).  
+The Assistant Axis: Situating and stabilizing the default persona of language models.  
+arXiv:2601.10387
