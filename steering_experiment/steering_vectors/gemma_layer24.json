@@ -1,0 +1,12 @@
+{
+  "layer": 24,
+  "activations_dir": "/Users/vv/Downloads/AI/experiment2/results/results_gemma2/results/activations",
+  "n_AB": 8,
+  "n_C": 7,
+  "delta_norm": 20.70631980895996,
+  "cosine_dist_AB_C": 0.004357099533081055,
+  "vector_shape": [
+    3584
+  ],
+  "note": "delta_normalized = (centroid_AB - centroid_C) / ||centroid_AB - centroid_C||"
+}
