@@ -1,0 +1,23 @@
+2026-04-12 13:04:12,627 INFO Experiment: yar_attractor_cprime
+2026-04-12 13:04:12,628 INFO Model: google/gemma-2-9b-it
+2026-04-12 13:04:12,629 INFO Layers: [8, 16, 24]
+2026-04-12 13:04:12,630 INFO Pooling: mean
+2026-04-12 13:04:12,631 INFO Baseline JSON: ../results/gemma/yar_attractor_v1_20260411_160259.json
+2026-04-12 13:04:12,638 INFO Condition A loaded: 609 words
+2026-04-12 13:04:12,686 INFO Condition B loaded: 7 paraphrases
+2026-04-12 13:04:12,724 INFO Condition C_prime loaded: 3 control prompts
+2026-04-12 13:04:12,726 INFO Data verification passed.
+2026-04-12 13:04:12,735 INFO Loading model...
+2026-04-12 13:04:12,736 INFO Loading model: google/gemma-2-9b-it
+2026-04-12 13:04:43,520 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-12 13:04:50,464 INFO Model loaded. Parameters: 9.2B
+2026-04-12 13:04:50,468 INFO Extracting activations: Condition A (1 texts)
+2026-04-12 13:04:50,842 INFO Extracting activations: Condition B (7 texts)
+2026-04-12 13:04:52,236 INFO Extracting activations: Condition C_prime (3 texts)
+2026-04-12 13:04:52,860 INFO Activations saved to results/c_prime/gemma/activations/
+2026-04-12 13:04:52,914 INFO Computing distances and statistics...
+2026-04-12 13:04:52,973 INFO Layer 8 | within=0.0035 cprime=0.0088 baselineC=0.0107 | p_welch=2.855e-20 p_perm=0.0000 p_mw=3.677e-10 | p(cprime_vs_C)=4.256e-07
+2026-04-12 13:04:53,029 INFO Layer 16 | within=0.0032 cprime=0.0074 baselineC=0.0082 | p_welch=2.737e-12 p_perm=0.0000 p_mw=4.844e-09 | p(cprime_vs_C)=8.593e-02
+2026-04-12 13:04:53,085 INFO Layer 24 | within=0.0027 cprime=0.0074 baselineC=0.0075 | p_welch=3.984e-11 p_perm=0.0000 p_mw=1.289e-09 | p(cprime_vs_C)=8.365e-01
+2026-04-12 13:04:53,116 INFO Results saved: results/c_prime/gemma/yar_attractor_cprime_20260412_130453.json
+2026-04-12 13:04:53,118 INFO Experiment complete.
