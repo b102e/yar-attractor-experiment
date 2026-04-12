@@ -1,0 +1,10 @@
+2026-04-12 14:05:10,489 INFO Loaded: YAR_A=1 YAR_B=7 SIGMA_ORIGINAL=1 SIGMA_B=7
+2026-04-12 14:05:10,489 INFO Dry run complete
+2026-04-12 14:05:24,242 INFO Loaded: YAR_A=1 YAR_B=7 SIGMA_ORIGINAL=1 SIGMA_B=7
+2026-04-12 14:05:24,243 INFO Loading model: meta-llama/Llama-3.1-8B-Instruct
+2026-04-12 14:05:25,224 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-12 14:06:36,623 INFO Extracting YAR_A (1 texts)
+2026-04-12 14:06:37,516 INFO Extracting YAR_B (7 texts)
+2026-04-12 14:06:38,757 INFO Extracting SIGMA_ORIGINAL (1 texts)
+2026-04-12 14:06:38,897 INFO Extracting SIGMA_B (7 texts)
+2026-04-12 14:06:39,858 INFO Saved results: results/control_paraphrase/llama/control_paraphrase_20260412_140639.json

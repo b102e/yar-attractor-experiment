@@ -1,0 +1,8 @@
+2026-04-12 14:06:51,885 INFO Loaded: YAR_A=1 YAR_B=7 SIGMA_ORIGINAL=1 SIGMA_B=7
+2026-04-12 14:06:51,886 INFO Loading model: google/gemma-2-9b-it
+2026-04-12 14:06:53,198 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-04-12 14:08:18,884 INFO Extracting YAR_A (1 texts)
+2026-04-12 14:08:19,282 INFO Extracting YAR_B (7 texts)
+2026-04-12 14:08:20,648 INFO Extracting SIGMA_ORIGINAL (1 texts)
+2026-04-12 14:08:20,837 INFO Extracting SIGMA_B (7 texts)
+2026-04-12 14:08:22,447 INFO Saved results: results/control_paraphrase/gemma/control_paraphrase_20260412_140822.json
