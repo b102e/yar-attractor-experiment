@@ -1,0 +1,69 @@
+Cognitive core:  609 words
+YAR preprint:    939 words
+Sham preprint:   5566 words
+
+Loading A+B centroids...
+  Layer 8: 8 A+B vectors loaded
+  Layer 16: 8 A+B vectors loaded
+  Layer 24: 8 A+B vectors loaded
+
+Loading meta-llama/Llama-3.1-8B-Instruct...
+Loaded. 8.0B params
+
+--- baseline_empty ---
+  Tokens: 8
+  Layer 8: dist_to_attractor = 0.8386
+  Layer 16: dist_to_attractor = 0.8374
+  Layer 24: dist_to_attractor = 0.7615
+
+--- baseline_core ---
+  Tokens: 1631
+  Layer 8: dist_to_attractor = 0.0090
+  Layer 16: dist_to_attractor = 0.0073
+  Layer 24: dist_to_attractor = 0.0056
+
+--- preprint_only ---
+  Tokens: 1361
+  Layer 8: dist_to_attractor = 0.2156
+  Layer 16: dist_to_attractor = 0.2319
+  Layer 24: dist_to_attractor = 0.2681
+
+--- core_plus_preprint ---
+  Tokens: 2994
+  Layer 8: dist_to_attractor = 0.0681
+  Layer 16: dist_to_attractor = 0.0820
+  Layer 24: dist_to_attractor = 0.0831
+
+--- sham_preprint_only ---
+  Tokens: 4096
+  Layer 8: dist_to_attractor = 0.3662
+  Layer 16: dist_to_attractor = 0.3329
+  Layer 24: dist_to_attractor = 0.3474
+
+=================================================================
+Condition                            L8      L16      L24
+-------------------------------------------------------
+baseline_empty                   0.8386   0.8374   0.7615
+baseline_core                    0.0090   0.0073   0.0056
+preprint_only                    0.2156   0.2319   0.2681
+core_plus_preprint               0.0681   0.0820   0.0831
+sham_preprint_only               0.3662   0.3329   0.3474
+
+HYPOTHESIS CHECKS:
+
+Layer 8:
+  H_A/B: core+preprint 0.0681 vs core 0.0090 => H_B (farther)
+  H_C:   preprint_only 0.2156 vs empty 0.8386 => SUPPORTED
+  H_C_s: yar 0.2156 vs sham 0.3662 => YAR-SPECIFIC
+
+Layer 16:
+  H_A/B: core+preprint 0.0820 vs core 0.0073 => H_B (farther)
+  H_C:   preprint_only 0.2319 vs empty 0.8374 => SUPPORTED
+  H_C_s: yar 0.2319 vs sham 0.3329 => YAR-SPECIFIC
+
+Layer 24:
+  H_A/B: core+preprint 0.0831 vs core 0.0056 => H_B (farther)
+  H_C:   preprint_only 0.2681 vs empty 0.7615 => SUPPORTED
+  H_C_s: yar 0.2681 vs sham 0.3474 => YAR-SPECIFIC
+
+Saved: results/preprint_reading/llama/preprint_reading_llama_3.1_8b_instruct_20260412_190753.json

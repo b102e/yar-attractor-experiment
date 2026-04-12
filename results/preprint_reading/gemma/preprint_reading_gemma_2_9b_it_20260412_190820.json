@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "experiment": "preprint_reading_v2",
+    "timestamp": "2026-04-12T19:08:20.263348",
+    "model": "google/gemma-2-9b-it",
+    "conditions": [
+      "baseline_empty",
+      "baseline_core",
+      "preprint_only",
+      "core_plus_preprint",
+      "sham_preprint_only"
+    ],
+    "layers": [
+      8,
+      16,
+      24
+    ],
+    "max_length": 4096,
+    "activations_dir": "results/gemma/activations",
+    "sham_source": "arxiv:2505.17237 (protein folding dynamics)"
+  },
+  "results": {
+    "baseline_empty": {
+      "8": {
+        "dist_to_centroid_AB": 0.5379303097724915,
+        "n_tokens": 6
+      },
+      "16": {
+        "dist_to_centroid_AB": 0.3142085671424866,
+        "n_tokens": 6
+      },
+      "24": {
+        "dist_to_centroid_AB": 0.187458336353302,
+        "n_tokens": 6
+      }
+    },
+    "baseline_core": {
+      "8": {
+        "dist_to_centroid_AB": 0.0028649568557739258,
+        "n_tokens": 1433
+      },
+      "16": {
+        "dist_to_centroid_AB": 0.002619624137878418,
+        "n_tokens": 1433
+      },
+      "24": {
+        "dist_to_centroid_AB": 0.0021136999130249023,
+        "n_tokens": 1433
+      }
+    },
+    "preprint_only": {
+      "8": {
+        "dist_to_centroid_AB": 0.0900118350982666,
+        "n_tokens": 1416
+      },
+      "16": {
+        "dist_to_centroid_AB": 0.05229353904724121,
+        "n_tokens": 1416
+      },
+      "24": {
+        "dist_to_centroid_AB": 0.05036211013793945,
+        "n_tokens": 1416
+      }
+    },
+    "core_plus_preprint": {
+      "8": {
+        "dist_to_centroid_AB": 0.026142001152038574,
+        "n_tokens": 2853
+      },
+      "16": {
+        "dist_to_centroid_AB": 0.01748645305633545,
+        "n_tokens": 2853
+      },
+      "24": {
+        "dist_to_centroid_AB": 0.01798480749130249,
+        "n_tokens": 2853
+      }
+    },
+    "sham_preprint_only": {
+      "8": {
+        "dist_to_centroid_AB": 0.17217546701431274,
+        "n_tokens": 4096
+      },
+      "16": {
+        "dist_to_centroid_AB": 0.09459084272384644,
+        "n_tokens": 4096
+      },
+      "24": {
+        "dist_to_centroid_AB": 0.08096790313720703,
+        "n_tokens": 4096
+      }
+    }
+  }
+}
